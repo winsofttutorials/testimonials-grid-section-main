@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+:root {
+  /* ### Primary */
+
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --Very-dark-blackish-blue-2: hsl(219, 29%, 14%, 70%);
+  --White: hsl(0, 0%, 100%);
+  --White1: hsl(0, 0%, 100%, 50%);
+  --White2: hsl(0, 0%, 100%, 70%);
+
+  /* ### Neutral */
+
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+  background: var(--Light-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimonialFrame {
+  width: 80%;
+  max-width: 970px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftFrame {
+  flex-basis: 74%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.topframe {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 48%;
+}
+
+.bigFrame {
+  flex-basis: 67%;
+  padding: 20px;
+  background-color: var(--Moderate-violet);
+  border-radius: 8px;
+}
+
+.bigFrame2 {
+  background-color: var(--Very-dark-blackish-blue);
+  box-shadow: 8px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.smallFrame {
+  flex-basis: 30%;
+  padding: 20px;
+  background-color: var(--Very-dark-grayish-blue);
+  border-radius: 8px;
+  box-shadow: 8px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.smallFrame2 {
+  background-color: var(--White);
+}
+
+.rightFrame {
+  padding: 20px;
+  max-height: 520px;
+  background-color: var(--White);
+  border-radius: 8px;
+  box-shadow: 8px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.userProfile {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.profilePic {
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.userName {
+  font-size: 13px;
+  color: var(--White);
+}
+
+.status {
+  font-size: 11px;
+  color: var(--White1);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 430px;
+  color: var(--White);
+  margin-bottom: 15px;
+  font-family: sans-serif;
+}
+
+.bigFrame1 {
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-size: 90px;
+  background-position: top right 70px;
+  background-repeat: no-repeat;
+}
+
+.smallFrame .title {
+  max-width: 170px;
+}
+
+.review {
+  color: var(--White2);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.bigFrame .review {
+  max-width: 425px;
+}
+
+.rightFrame .userName,
+.smallFrame2 .userName {
+  color: var(--Very-dark-grayish-blue);
+}
+.rightFrame .status,
+.smallFrame2 .status {
+  color: var(--Light-gray);
+}
+.rightFrame .title,
+.smallFrame2 .title {
+  color: var(--Very-dark-blackish-blue-2);
+  max-width: 150px;
+}
+
+.rightFrame .review {
+  color: var(--Very-dark-grayish-blue);
+  max-width: 190px;
+  font-size: 13px;
+}
+.smallFrame2 .review {
+  color: var(--Very-dark-grayish-blue);
+  max-width: 210px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.bigFrame2 .review {
+  margin-top: 25px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.quotation {
+  position: absolute;
+  top: 5px;
+  right: 70px;
+  width: 80px;
+}
+
+@media (max-width: 375px) {
+  .bigFrame1 {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-size: 90px;
+    background-position: top right 29px;
+    background-repeat: no-repeat;
+  }
+
+  .quotation {
+    right: 20px;
+  }
+  .testimonialFrame {
+    flex-direction: column;
+  }
+
+  .bigFrame .title {
+    max-width: 209px;
+    font-weight: 600;
+  }
+
+  /* .title {
+    max-width: 210px;
+  } */
+
+  .bigFrame {
+    margin-bottom: 20px;
+    box-shadow: unset;
+  }
+
+  .smallFrame {
+    margin-bottom: 20px;
+    box-shadow: unset;
+  }
+
+  .smallFrame .title {
+    max-width: 250px;
+    font-weight: 600;
+  }
+
+  .review {
+    max-width: 290px;
+  }
+
+  .smallFrame2 .review {
+    max-width: 230px;
+  }
+
+  .bigFrame .review {
+    max-width: 225px;
+  }
+
+  .bigFrame2 .review {
+    max-width: 238px;
+  }
+
+  .topframe {
+    width: 100%;
+    flex-direction: column;
+  }
+  .rightFrame .title {
+    max-width: 250px;
+    font-weight: 600;
+  }
+
+  .rightFrame .review {
+    max-width: 240px;
+    font-size: 12px;
+  }
+}
